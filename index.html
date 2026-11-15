@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7f2">
+    <title>Lingua — ton anglais, à ton rythme</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#" data-page="home" aria-label="Lingua, accueil">
+          <span class="brand-mark">L</span>
+          <span>lingua<span class="brand-dot">.</span></span>
+        </a>
+        <p class="nav-label">APPRENDRE</p>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <button class="nav-link active" data-page="home"><span class="nav-icon">⌂</span>Aujourd'hui</button>
+          <button class="nav-link" data-page="grammar"><span class="nav-icon">▤</span>Grammaire</button>
+          <button class="nav-link" data-page="writing"><span class="nav-icon">✎</span>Écriture</button>
+          <button class="nav-link" data-page="roleplay"><span class="nav-icon">◌</span>Jeux de rôle</button>
+          <button class="nav-link" data-page="videos"><span class="nav-icon">▷</span>Vidéos</button>
+          <button class="nav-link" data-page="games"><span class="nav-icon">✳</span>Mini-jeux</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="level-card">
+            <div class="level-heading"><span>TON OBJECTIF</span><span class="level-badge">B2</span></div>
+            <strong>Anglais courant</strong>
+            <div class="level-track"><span></span></div>
+            <small>Un petit pas chaque jour.</small>
+          </div>
+          <div class="profile">
+            <div class="avatar">A</div>
+            <div><strong>Mon espace</strong><small>Apprenant·e</small></div>
+            <span class="profile-dots">···</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="breadcrumb"><span>Mon apprentissage</span><span class="breadcrumb-separator">/</span><strong id="page-title">Aujourd'hui</strong></div>
+          <div class="top-stats">
+            <div class="stat-pill streak"><span>🔥</span><strong id="streak-count">1</strong><span>jours</span></div>
+            <div class="stat-pill xp-pill"><span>✦</span><strong id="xp-count">0</strong><span>XP</span></div>
+          </div>
+        </header>
+
+        <section class="page active" id="page-home" aria-labelledby="home-heading">
+          <div class="welcome-row">
+            <div>
+              <p class="eyebrow">DIMANCHE · TA SESSION DU JOUR</p>
+              <h1 id="home-heading">Hello, prêt·e à progresser ? <span class="wave">✦</span></h1>
+              <p class="subheading">Quelques minutes aujourd’hui, un grand pas vers ton niveau B2 demain.</p>
+            </div>
+            <div class="daily-progress">
+              <div class="progress-ring" id="daily-ring"><span id="daily-progress">0%</span></div>
+              <div><strong>Objectif du jour</strong><small id="daily-label">0 sur 3 activités</small></div>
+            </div>
+          </div>
+
+          <div class="home-grid">
+            <div class="primary-column">
+              <article class="continue-card">
+                <div class="continue-copy">
+                  <span class="card-kicker">REPRENDRE L’APPRENTISSAGE</span>
+                  <h2>Les temps du présent</h2>
+                  <p>Exprime tes habitudes et ce qui se passe en ce moment.</p>
+                  <button class="button button-light" data-page="grammar">Continuer la leçon <span>→</span></button>
+                </div>
+                <div class="continue-art" aria-hidden="true">
+                  <div class="art-sun"></div><div class="art-book">A<br><span>is</span></div><div class="art-leaf">✳</div>
+                </div>
+              </article>
+
+              <div class="section-heading">
+                <div><p class="eyebrow">TON PARCOURS</p><h2>Choisis ta prochaine étape</h2></div>
+                <button class="text-button" data-page="games">Tout explorer <span>→</span></button>
+              </div>
+              <div class="activity-grid">
+                <button class="activity-card grammar-card" data-page="grammar">
+                  <span class="activity-icon icon-lilac">Aa</span><span class="activity-arrow">↗</span>
+                  <strong>Grammaire</strong><small>Une règle à la fois</small><span class="activity-meta">5 min <i>•</i> Leçon</span>
+                </button>
+                <button class="activity-card writing-card" data-page="writing">
+                  <span class="activity-icon icon-peach">✎</span><span class="activity-arrow">↗</span>
+                  <strong>Écriture</strong><small>Exprime tes idées</small><span class="activity-meta">10 min <i>•</i> Pratique</span>
+                </button>
+                <button class="activity-card roleplay-card" data-page="roleplay">
+                  <span class="activity-icon icon-mint">◌</span><span class="activity-arrow">↗</span>
+                  <strong>Jeux de rôle</strong><small>Parle en situation</small><span class="activity-meta">5 min <i>•</i> Conversation</span>
+                </button>
+                <button class="activity-card video-card" data-page="videos">
+                  <span class="activity-icon icon-blue">▷</span><span class="activity-arrow">↗</span>
+                  <strong>Vidéos</strong><small>Regarde et comprends</small><span class="activity-meta">10 min <i>•</i> Compréhension</span>
+                </button>
+                <button class="activity-card games-card" data-page="games">
+                  <span class="activity-icon icon-yellow">✳</span><span class="activity-arrow">↗</span>
+                  <strong>Mini-jeux</strong><small>Apprends en jouant</small><span class="activity-meta">3 min <i>•</i> Vocabulaire</span>
+                </button>
+              </div>
+            </div>
+            <aside class="right-column">
+              <article class="week-card">
+                <div class="section-heading compact"><div><p class="eyebrow">TA RÉGULARITÉ</p><h2>Cette semaine</h2></div><span class="calendar-icon">▦</span></div>
+                <div class="week-days" aria-label="Jours de la semaine">
+                  <div><small>L</small><span>·</span></div><div><small>M</small><span>·</span></div><div><small>M</small><span>·</span></div><div><small>J</small><span>·</span></div><div><small>V</small><span>·</span></div><div><small>S</small><span>·</span></div><div class="today"><small>D</small><span>✓</span></div>
+                </div>
+                <p class="week-note"><strong>Chaque jour compte !</strong><br>Reviens demain pour continuer ta série.</p>
+              </article>
+              <article class="tip-card">
+                <span class="tip-spark">✦</span><p class="eyebrow">LE CONSEIL DU JOUR</p>
+                <h3>Ose faire des erreurs.</h3>
+                <p>Chaque erreur est une occasion de comprendre et de progresser.</p>
+                <span class="tip-signature">YOU’VE GOT THIS <span>↗</span></span>
+              </article>
+            </aside>
+          </div>
+        </section>
+
+        <section class="page" id="page-grammar" aria-labelledby="grammar-heading">
+          <div class="page-intro">
+            <p class="eyebrow">LES BASES, PUIS BIEN PLUS</p>
+            <h1 id="grammar-heading">La grammaire, sans prise de tête.</h1>
+            <p class="subheading">Comprends la règle, observe des exemples, puis vérifie ce que tu as retenu.</p>
+          </div>
+          <div class="lesson-layout">
+            <div class="lesson-list" id="lesson-list" aria-label="Leçons de grammaire"></div>
+            <article class="lesson-content" id="lesson-content" aria-live="polite"></article>
+          </div>
+        </section>
+
+        <section class="page" id="page-writing" aria-labelledby="writing-heading">
+          <div class="page-intro">
+            <p class="eyebrow">ÉCRIS POUR PROGRESSER</p>
+            <h1 id="writing-heading">À toi de prendre la plume.</h1>
+            <p class="subheading">Choisis un sujet et écris en anglais. Ton brouillon est enregistré sur cet appareil.</p>
+          </div>
+          <div class="writing-layout">
+            <aside class="writing-prompts">
+              <p class="eyebrow">CHOISIS UN SUJET</p>
+              <div id="prompt-list"></div>
+              <div class="writing-note"><span>✦</span><p><strong>Petit conseil</strong><br>Essaie d’écrire quelques phrases complètes. Ne cherche pas la perfection du premier coup.</p></div>
+            </aside>
+            <article class="writing-editor">
+              <div class="editor-heading"><div><span class="editor-label">TON EXERCICE</span><h2 id="prompt-title"></h2></div><span class="editor-level">B1–B2</span></div>
+              <p class="prompt-description" id="prompt-description"></p>
+              <textarea id="writing-text" placeholder="Start writing in English…" aria-label="Ton texte en anglais"></textarea>
+              <div class="editor-footer"><span id="word-count">0 mots</span><span class="saved-state" id="saved-state">Enregistré sur cet appareil ✓</span></div>
+              <div class="writing-checklist"><strong>Avant de terminer, vérifie :</strong><span>□ Tes phrases commencent par une majuscule</span><span>□ Tu as utilisé des mots de liaison (because, however…)</span><span>□ Tu as relu les temps des verbes</span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="page" id="page-roleplay" aria-labelledby="roleplay-heading">
+          <div class="page-intro">
+            <p class="eyebrow">SPEAK WITH CONFIDENCE</p>
+            <h1 id="roleplay-heading">L’anglais, en situation réelle.</h1>
+            <p class="subheading">Choisis un scénario et entraîne-toi à répondre en anglais. Pas besoin d’être parfait·e !</p>
+          </div>
+          <div class="roleplay-layout">
+            <aside class="scenario-panel"><p class="eyebrow">SCÉNARIOS</p><div id="scenario-list"></div></aside>
+            <article class="chat-panel">
+              <div class="chat-header"><div class="chat-avatar" id="chat-avatar">☕</div><div><strong id="chat-name"></strong><small id="chat-context"></small></div><span class="live-dot">● EN PRATIQUE</span></div>
+              <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+              <form class="chat-form" id="chat-form"><input id="chat-input" autocomplete="off" placeholder="Écris ta réponse en anglais…" aria-label="Ta réponse en anglais"><button class="send-button" aria-label="Envoyer">↑</button></form>
+              <p class="chat-hint" id="chat-hint">Écris une réponse pour continuer la conversation.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="page" id="page-games" aria-labelledby="games-heading">
+          <div class="page-intro">
+            <p class="eyebrow">APPRENDRE EN JOUANT</p>
+            <h1 id="games-heading">Un petit défi ?</h1>
+            <p class="subheading">Choisis la bonne traduction et fais travailler ta mémoire.</p>
+          </div>
+          <article class="game-panel" id="game-panel"></article>
+        </section>
+
+        <section class="page" id="page-videos" aria-labelledby="videos-heading">
+          <div class="page-intro">
+            <p class="eyebrow">WATCH · LISTEN · UNDERSTAND</p>
+            <h1 id="videos-heading">Regarde, écoute et réponds.</h1>
+            <p class="subheading">Choisis une vidéo en anglais, puis réponds aux questions avec l’aide des traductions françaises.</p>
+          </div>
+          <div class="video-layout">
+            <article class="video-player-card">
+              <div class="video-suggestions">
+                <div><p class="eyebrow">TROUVE UNE VIDÉO</p><p class="video-help">Choisis un niveau pour chercher des vidéos d’apprentissage sur YouTube.</p></div>
+                <div class="video-searches">
+                  <a href="https://www.youtube.com/results?search_query=learn+English+A2+listening+with+subtitles" target="_blank" rel="noopener noreferrer">A2 · Débutant <span>↗</span></a>
+                  <a href="https://www.youtube.com/results?search_query=learn+English+B1+listening+with+subtitles" target="_blank" rel="noopener noreferrer">B1 · Intermédiaire <span>↗</span></a>
+                  <a href="https://www.youtube.com/results?search_query=learn+English+B2+listening+with+subtitles" target="_blank" rel="noopener noreferrer">B2 · Avancé <span>↗</span></a>
+                </div>
+              </div>
+              <form class="video-url-form" id="video-url-form">
+                <label for="video-url">Colle ici le lien d’une vidéo YouTube</label>
+                <div><input id="video-url" type="url" placeholder="https://www.youtube.com/watch?v=…" autocomplete="url"><button class="button button-green">Charger la vidéo</button></div>
+                <p id="video-url-error" class="video-error" aria-live="polite"></p>
+              </form>
+              <div class="video-frame" id="video-frame">
+                <div class="video-placeholder"><span>▷</span><strong>Ta vidéo apparaîtra ici</strong><small>Choisis une vidéo éducative en anglais avec des sous-titres, puis colle son lien ci-dessus.</small></div>
+              </div>
+              <p class="video-privacy">La vidéo est fournie par YouTube. Elle ne se charge qu’après avoir collé un lien.</p>
+            </article>
+            <article class="video-questions-card">
+              <p class="eyebrow">COMPRÉHENSION · ANSWER IN ENGLISH OR FRENCH</p>
+              <h2>Qu’as-tu compris ?</h2>
+              <p class="question-intro">Mets la vidéo en pause si besoin. Tu peux répondre en anglais ou en français.</p>
+              <div id="video-questions"></div>
+              <div class="video-question-footer"><span id="video-answer-count">0 / 3 réponses</span><span id="video-saved-state">Enregistré sur cet appareil ✓</span></div>
+              <p class="video-completion-note" id="video-completion-note">Réponds aux trois questions pour terminer l’activité et gagner des XP.</p>
+            </article>
+          </div>
+        </section>
+
+        <footer class="footer-note">Un apprentissage à ton rythme <span>✦</span></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
